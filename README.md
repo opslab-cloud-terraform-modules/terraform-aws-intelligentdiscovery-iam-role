@@ -3,22 +3,16 @@ This module is inteded for quicly deploying the needed role for Intelligent Disc
 
 
 ## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 0.13, < 0.14 |
-| aws | >= 3.5.0, < 4.0 |
-
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 3.5.0, < 4.0 |
+| aws | >= 3.10.0, < 4.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|------|---------|:-----:|
 | account\_id | AWS Account ID of Intelligent Discovery service | `string` | n/a | yes |
 | def\_tags | A map of default tags to add to all resources | `map` | <pre>{<br>  "CostCenter": "NOT_DEFINED",<br>  "Terraform": "true"<br>}</pre> | no |
 | external\_id | External ID used by Intelligent Discovery service | `string` | n/a | yes |
